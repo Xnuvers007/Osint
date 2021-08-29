@@ -112,6 +112,7 @@ def rekening():
     review = soup.find_all('div', class_="card")
     for i in review:
         print(i.text)
+    input("Enter untuk selesai")
 
 
 def Nomor_Telepon():
@@ -126,6 +127,7 @@ def Nomor_Telepon():
     review = soup.find_all('div', class_='card')
     for i in review:
         print(i.text)
+    input("Enter Untuk Selesai")
 
 
 def menus():
