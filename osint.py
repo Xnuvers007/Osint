@@ -33,7 +33,7 @@ Y = f"{w}\033[1;43m"
 B = f"{w}\033[1;44m"
 
 home = os.getenv("HOME")
-#cokifile = home + "/.cookies"
+cokifile = home + "/.cookies"
 space = "         "
 lines =  space + "-"*46
 apihack = "https://api.hackertarget.com/{}/?q={}"
