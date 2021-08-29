@@ -1,0 +1,4 @@
+wheel lxml
+requests
+email-validator
+googlesearch-python
