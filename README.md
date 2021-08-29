@@ -1,4 +1,4 @@
-![repo-size](https://img.shields.io/github/repo-size/Xnuvers007/Osint?color=red&logo=python&logoColor=yellow&style=plastic)
+![repo-size](https://img.shields.io/github/repo-size/Xnuvers007/Osint)
 ![Logo](https://img.shields.io/github/languages/code-size/xnuvers007/Osint)
 ![Lisensi](https://img.shields.io/github/license/xnuvers007/Osint?color=blue&logoColor=black&style=plastic)
 ![My-Stars-Repo](https://img.shields.io/github/stars/xnuvers007?affiliations=OWNER&style=social)
