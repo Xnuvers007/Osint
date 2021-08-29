@@ -121,7 +121,8 @@ def Nomor_Telepon():
     url=requests.get("https://www.kredibel.co.id/phone/id/"+link)
     soup = BeautifulSoup(url.content, 'html.parser')
     my_classes = soup.find(class_='mb-0 mr-2')
-    print("Nomor Telepon : "+my_classes.text)
+    #print("Nomor Telepon : "+my_classes.text)
+    print("Nomor Telepon: ",str(my_classes.text))
     penjelasan = soup.find_all('p', class_='mt-4 text-danger')
     print("Penjelasan : "+str(penjelasan))
     review = soup.find_all('div', class_='card')
@@ -674,3 +675,8 @@ if __name__ == "__main__":
         else: exit(r+"* no command found for: "+str(arg[1:]).replace("[","").replace("]",""))
     else: exit(r+"* no command found for: "+str(arg[1:]).replace("[","").replace("]",""))                   
 
+#
+#
+# CODED BY XNUVERS007 #
+#
+#
