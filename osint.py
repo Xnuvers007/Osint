@@ -108,7 +108,7 @@ def rekening():
     url=requests.get("https://www.kredibel.co.id/account/"+link)
     soup = BeautifulSoup(url.content, 'html.parser')
     my_classes = soup.find(class_='mb-0 mr-2')
-    print("Nomor Rekening : "+my_classes.text)
+    print("Nomor Rekening : ",my_classes.text)
     review = soup.find_all('div', class_="card")
     for i in review:
         print(i.text)
