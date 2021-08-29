@@ -13,7 +13,7 @@
 ![image](https://user-images.githubusercontent.com/62522733/131252692-16065250-5607-43a0-a606-db6162211986.png)
 
 
-ini adalah tools untuk melakukan identifikasi terhadap objek maupun objek
+ini adalah tools untuk melakukan identifikasi terhadap objek maupun subjek
 
 python, windows, termux, linux :
 
