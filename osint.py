@@ -2,7 +2,7 @@
 # Author by Xnuvers007
 # Support me with follow my instagram page and github page 
 # Disclaimer: please dont re-edit or recode the original source code !
-# Last update: 29/08/2021 - version 1.5
+# Last update: 04/09/2021 - version 1.7
 
 from bs4 import BeautifulSoup
 import os
@@ -74,6 +74,7 @@ def menu():
         {w}{b}  11{w} RIPlookup    {d} Reverse IP lookup
         {w}{b}  12{w} IPlocation   {d} IP untuk mentrack/melacak Lokasi
         {w}{b}  13{w} Check Penipu {d} Untuk Mengecek Rekening/Nomor Telepon Penipu
+        {w}{b}  14{w} Phone Number {d} Informasi Nomor Telepon
         """)
     mainmenu()
 
@@ -97,6 +98,7 @@ def mainmenu():
                 elif cmd in ("11"): infoga("reverseiplookup")
                 elif cmd in ("12"): iplocation()
                 elif cmd in ("13"): menus()
+                elif cmd in ("14"): phonenumbers()
                 else: continue
             else: continue
         except KeyboardInterrupt:
@@ -170,6 +172,25 @@ def menus():
             print(i)
         menus()
     menu()
+
+def phonenumbers():
+        import phonenumbers
+        from phonenumbers import geocoder, timezone, carrier
+
+        print("Gunakan +62, +91, +994, dll. , contoh +621234567890")
+        noTelp=input("Masukan Nomor Telepon : ")
+
+
+        noTelp=phonenumbers.parse(noTelp)
+
+        print(timezone.time_zones_for_number(noTelp))
+        print(carrier.name_for_number(noTelp, "id"))
+
+        print(geocoder.description_for_number(noTelp, "id"))
+
+        print("Apakah Nomornya Valid ? : ",phonenumbers.is_valid_number(noTelp))
+        print("Checking possibility Number : ",phonenumbers.is_possible_number(noTelp))
+        menu()
 
 def iplocation():
     print(f"{space}{b}>{w} local IP: {os.popen('curl ifconfig.co --silent').readline().strip()}")
